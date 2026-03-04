@@ -78,7 +78,7 @@ async function resolveChannelId(channelUrl: string): Promise<string | undefined>
       "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
       "Accept-Language": "en-US,en;q=0.9",
     },
-    next: { revalidate: 86400 },
+    cache: "no-store",
   });
 
   if (!response.ok) return undefined;
