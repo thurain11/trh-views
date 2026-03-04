@@ -1,0 +1,15 @@
+export const YOUTUBE_CHANNEL_URLS: string[] = [
+  "https://www.youtube.com/@SoccerHouseMM",
+  "https://www.youtube.com/@mrattchannel/videos",
+  "https://www.youtube.com/@TBHLabsMyanmar",
+  "https://www.youtube.com/@SithuOpinio",
+  "https://www.youtube.com/@mynotesbykzyh",
+  "https://www.youtube.com/@ukmatchdayofficialsportsch8924",
+  "https://www.youtube.com/@elevenwebtv11",
+  "https://www.youtube.com/@DVBdigital/featured",
+  "https://www.youtube.com/@FootballMaster-UK",
+  "https://www.youtube.com/@mgmg90s80s",
+  "https://www.youtube.com/@KhitThitMedia",
+  "https://www.youtube.com/@recapsbox",
+  "https://www.youtube.com/@thelight2024",
+];
