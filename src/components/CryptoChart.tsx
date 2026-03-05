@@ -48,7 +48,9 @@ export default function CryptoChart({ data }: { data: CryptoChartPoint[] }) {
               borderRadius: 12,
               color: "#fff",
             }}
-            formatter={(value: number) => `${value.toFixed(2)}%`}
+            itemStyle={{ color: "#fff" }}
+            labelStyle={{ color: "#fff" }}
+            formatter={(value: number) => [`${value.toFixed(2)}%`, "24h Change"]}
           />
           <Bar
             dataKey="change"

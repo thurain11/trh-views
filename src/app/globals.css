@@ -27,6 +27,25 @@ body {
   background-attachment: fixed;
 }
 
+html.theme-light {
+  color-scheme: light;
+}
+
+html.theme-light body {
+  @apply text-slate-900;
+  background-image: radial-gradient(
+      circle at top left,
+      rgba(14, 165, 233, 0.2),
+      transparent 58%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(251, 113, 133, 0.18),
+      transparent 52%
+    ),
+    linear-gradient(180deg, #f7fafc 0%, #eef2ff 60%, #f8fafc 100%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -57,6 +76,54 @@ body {
 
 .link {
   @apply text-white/80 transition hover:text-white;
+}
+
+html.theme-light .card {
+  @apply border-slate-300/70 bg-white/80 shadow-none;
+}
+
+html.theme-light .glass {
+  @apply border-slate-300/70 bg-white/70;
+}
+
+html.theme-light .metric-pill {
+  @apply border-slate-300 bg-slate-100 text-slate-600;
+}
+
+html.theme-light .section-title {
+  @apply text-slate-900;
+}
+
+html.theme-light .subtle {
+  @apply text-slate-600;
+}
+
+html.theme-light .link {
+  @apply text-slate-700 hover:text-slate-900;
+}
+
+html.theme-light [class*="text-white"] {
+  color: #0f172a !important;
+}
+
+html.theme-light [class*="text-solar"] {
+  color: #b45309 !important;
+}
+
+html.theme-light [class*="text-tide"] {
+  color: #0e7490 !important;
+}
+
+html.theme-light [class*="text-emerald"] {
+  color: #047857 !important;
+}
+
+html.theme-light [class*="bg-white/"] {
+  background-color: rgba(15, 23, 42, 0.06) !important;
+}
+
+html.theme-light [class*="border-white/"] {
+  border-color: rgba(15, 23, 42, 0.14) !important;
 }
 
 .weather-scene {

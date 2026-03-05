@@ -2,6 +2,7 @@ import { format } from "date-fns";
 import Link from "next/link";
 import AutoRefresh from "../components/AutoRefresh";
 import CryptoChart from "../components/CryptoChart";
+import ThemeToggle from "../components/ThemeToggle";
 import YouTubeEmbed from "../components/YouTubeEmbed";
 import WeatherVisual from "../components/WeatherVisual";
 import { getDashboardData } from "../lib/data";
@@ -87,6 +88,7 @@ export default async function HomePage() {
             <span className="font-mono text-white">
               {format(new Date(data.updatedAt), "MMM d, yyyy HH:mm")}
             </span>
+            <ThemeToggle />
           </div>
         </div>
         {data.errors.length > 0 && (

@@ -12,4 +12,5 @@ export const YOUTUBE_CHANNEL_URLS: string[] = [
   "https://www.youtube.com/@KhitThitMedia",
   "https://www.youtube.com/@recapsbox",
   "https://www.youtube.com/@thelight2024",
+  "https://www.youtube.com/@MyanmarCelebrity/videos",
 ];
